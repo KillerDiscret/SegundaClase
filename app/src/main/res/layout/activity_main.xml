@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#000000"
+    >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/haojue" />
+
+    <TextView
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:background="@drawable/borde_titulo"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hojue Motos" />
+</FrameLayout>
+<android.support.constraint.ConstraintLayout
+    android:layout_weight="1"
+    android:background="#92e7be"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Hola papu grasoso asdasdasdasda"
+
+            />
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
+
+<ScrollView
+    android:background="#47bbd2"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/kawasaki" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
